@@ -6,7 +6,6 @@
 - **Library-First:** Use `src/main.rs` for entry and `src/lib.rs` for core logic.
 - **Modularity:** Separate concerns into `src/cli.rs`, `src/core.rs`, `src/display.rs`, and `src/error.rs`.
 - **Unix Philosophy:** Use `stdout` for data, `stderr` for logs. Support silent mode and exit codes.
-- **If the existing project structure does not match the 'Library-First' modular approach, provide a step-by-step refactoring plan  	 to migrate it to the new architecture.
 
 ### 1.2 Technology Stack (2026 Modern Crates)
 - **CLI:** `clap` (derive) with a `--json` global flag.
@@ -14,7 +13,6 @@
 - **UX:** `indicatif` (progress), `ratatui` or `tabled` (UI/Tables), `console` (TTY-aware styling).
 - **Logging:** `tracing` structured logging, persisted to user's cache dir.
 - **Testing:** Include unit tests for every core function using `cargo test`.
-- **Identify any outdated or conflicting crates in my current project and suggest how to migrate to the 2026 Modern Crates specified in Section 1.2.
 
 ### 1.3 The Mentorship & Communication Protocol (CRITICAL)
 - **Bilingual Requirement:** All explanations, instructions, and "Learning Moments" MUST be in both English and Myanmar (Burmese). Do not summarize or shorten the Myanmar translation.
@@ -26,5 +24,5 @@
 - **Format:** Provide solutions in a Notion-ready format using decimal numbering (e.g., 1.1, 1.2).
 - **Learning Log:** Append all "Learning Moments," "Command Explanations," and "Design Choices" to `LEARNING_LOG.md` with timestamps.
 
-### 1.4 Task Specification 
-["I have an existing project. Here is my current Cargo.toml and project structure. Please analyze them before making changes."]
+### 1.4 Task Specification This is the example don't incluede in instruction
+["Let's build the ( ) project. Start with Step 1: Project Initialization. Use the architecture and communication protocol defined above. Explain every command and provide the learning moments in both English and Myanmar."]

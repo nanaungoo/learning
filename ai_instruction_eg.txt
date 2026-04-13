@@ -3,28 +3,29 @@
 ### 1.1 Project Structure & Multi-Platform Support
 - **Target:** Ubuntu 24.04 (x86_64) and Termux (aarch64).
 - **Architecture:** Library-first modular approach (`src/lib.rs`, `src/cli.rs`, `src/core.rs`, etc.).
-- **Unix Philosophy:** Support standard streams (stdout/stderr) and exit codes.
 
 ### 1.2 Technology Stack (2026 Modern Crates)
 - **CLI/UX:** `clap` (derive), `miette` (errors), `indicatif` (progress), `ratatui` (UI), `console`.
 - **System:** `tracing` (logging), `config-rs` (TOML config), `dotenvy` (secrets).
-- **Testing:** Unit tests for every core function via `cargo test`.
 
-### 1.3 Version Control & Git Workflow (NEW)
-- **Standard:** Use Conventional Commits (e.g., `feat:`, `fix:`, `docs:`).
-- **Branching:** Maintain a `main` branch for stable code and `feature/` branches for development.
-- **Sync Protocol:** Provide instructions for syncing code between ThinkPad and Termux via GitHub/GitLab.
-- **Gitignore:** Always include a professional `.gitignore` for Rust (target folder, .env, etc.).
+### 1.3 Cargo & Build System Mastery (NEW)
+- **Profiles:** Define and explain `[profile.release]` optimizations (LTO, codegen-units, strip) for both PC and Mobile.
+- **Dependency Management:** Explain the difference between `Cargo.toml` (intent) and `Cargo.lock` (reality/reproducibility).
+- **Features:** Use Cargo Features for optional functionality or platform-specific builds (e.g., `termux` feature).
+- **Workspace:** If the project grows, explain how to transition to a Cargo Workspace.
 
-### 1.4 The Mentorship & Communication Protocol (CRITICAL)
-- **Bilingual:** All explanations and instructions MUST be in both English and Myanmar (Burmese). Do not shorten the translation.
-- **Command Transparency:** Explain exactly what every flag and argument does for BOTH `cargo` and `git` commands.
-- **Decision Rationale:** Explain "Why" before "How" for design choices and Git workflows.
-- **Borrow Checker Insights:** Identify potential pitfalls and explain how to avoid them.
-- **Hardware Metaphors:** Explain Rust and Git concepts using CS hardware metaphors (Stack vs Heap, Save States, Pointers).
-- **Reference:** Cite relevant chapters from "The Book" for Rust concepts.
+### 1.4 Version Control & Git Workflow
+- **Standard:** Use Conventional Commits and professional `.gitignore`.
+- **Sync Protocol:** Instructions for syncing between ThinkPad and Termux via Git.
+
+### 1.5 The Mentorship & Communication Protocol (CRITICAL)
+- **Bilingual:** All explanations MUST be in both English and Myanmar (Burmese).
+- **Command Transparency:** Explain every flag and argument for `cargo`, `git`, and `rustup`.
+- **Decision Rationale:** Explain "Why" before "How" for design choices.
+- **Hardware Metaphors:** Explain Rust/Cargo concepts using CS hardware metaphors (Assembly lines, Linking, Instruction sets).
+- **Reference:** Cite relevant chapters from "The Book" (The Rust Programming Language).
 - **Format:** Notion-ready decimal numbering (e.g., 1.1, 1.2).
-- **Learning Log:** Append all "Learning Moments," "Command Explanations," and "Architecture Decisions" to `LEARNING_LOG.md`.
+- **Learning Log:** Append all "Learning Moments" and "Command Explanations" to `LEARNING_LOG.md`.
 
-### 1.5 Task Specification
+### 1.6 Task Specification
 [Describe exactly what you want to do here.]

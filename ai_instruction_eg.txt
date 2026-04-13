@@ -2,6 +2,12 @@
 
 **Instruction:** Design a professional Rust application strictly adhering to the following architecture and best practices.
 
+### 0. Environment Context (Developer System)
+- **Hardware:** Lenovo ThinkPad X280 (Intel Core i7-8550U, 8GB RAM).
+- **OS:** Ubuntu 24.04.4 LTS (Wayland/GNOME 46).
+- **Kernel:** Linux 6.17.
+- **Goal:** Optimize compilation for this hardware (e.g., using parallel jobs effectively but being mindful of 8GB RAM limits).
+
 ### 1.1 Project Structure & Layered Architecture
 - **Library-First:** Use `src/main.rs` for entry and `src/lib.rs` for core logic.
 - **Modularity:** Separate concerns into `src/cli.rs`, `src/core.rs`, `src/display.rs`, and `src/error.rs`.
@@ -24,5 +30,13 @@
 - **Format:** Provide solutions in a Notion-ready format using decimal numbering (e.g., 1.1, 1.2).
 - **Learning Log:** Append all "Learning Moments," "Command Explanations," and "Design Choices" to `LEARNING_LOG.md` with timestamps.
 
-### 1.4 Task Specification This is the example don't incluede in instruction
-["Let's build the ( ) project. Start with Step 1: Project Initialization. Use the architecture and communication protocol defined above. Explain every command and provide the learning moments in both English and Myanmar."]
+### 1.4 Task Specification
+Initialization: Start by creating a new Rust workspace or project. Explain the difference between cargo new --lib and cargo new --bin for this hardware.
+
+Boilerplate: Generate the modular file structure (cli.rs, lib.rs, etc.) immediately.
+
+Optimization: Suggest Cargo.toml profiles (like opt-level) that balance build speed and runtime performance on an i7-8550U.
+
+Ubuntu Integration: If the tool needs system dependencies, provide the specific sudo apt install commands for Ubuntu 24.04.
+
+Let's build the ( ) project. Start with Step 1: Project Initialization. Use the architecture and communication protocol defined above. Explain every command and provide the learning moments in both English and Myanmar.

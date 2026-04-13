@@ -25,4 +25,4 @@
 - **Learning Log:** Append all "Learning Moments," "Command Explanations," and "Design Choices" to `LEARNING_LOG.md` with timestamps.
 
 ### 1.4 Task Specification This is the example don't incluede in instruction
-[Describe exactly what you want the tool to do here. ဥပမာ: "Build a CLI tool that takes a YouTube URL and downloads the transcript using the youtube-transcript-api logic in Rust."]
+["Let's build the ( ) project. Start with Step 1: Project Initialization. Use the architecture and communication protocol defined above. Explain every command and provide the learning moments in both English and Myanmar."]

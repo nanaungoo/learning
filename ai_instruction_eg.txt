@@ -31,12 +31,12 @@
 - **Learning Log:** Append all "Learning Moments," "Command Explanations," and "Design Choices" to `LEARNING_LOG.md` with timestamps.
 
 ### 1.4 Task Specification
-Initialization: Start by creating a new Rust workspace or project. Explain the difference between cargo new --lib and cargo new --bin for this hardware.
+Code Audit: I will provide my current Cargo.toml and src/ files. Analyze them for anti-patterns and memory safety issues based on Rust 2024/2026 standards.
 
-Boilerplate: Generate the modular file structure (cli.rs, lib.rs, etc.) immediately.
+Modular Migration: Provide a plan to break down my existing monolithic code into the modular layers defined in Section 1.1.
 
-Optimization: Suggest Cargo.toml profiles (like opt-level) that balance build speed and runtime performance on an i7-8550U.
+Crate Replacement: Identify libraries I'm using that could be replaced by the "2026 Modern Crates" in Section 1.2 for better performance on Linux 6.17.
 
-Ubuntu Integration: If the tool needs system dependencies, provide the specific sudo apt install commands for Ubuntu 24.04.
+Hardware Refactoring: Explain how moving from my current implementation to your suggested one affects the CPU Cache usage or RAM footprint on my ThinkPad.
 
 Let's build the ( ) project. Start with Step 1: Project Initialization. Use the architecture and communication protocol defined above. Explain every command and provide the learning moments in both English and Myanmar.
